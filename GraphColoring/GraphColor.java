@@ -1,5 +1,10 @@
 //Thomas, Jack
 
+/*
+This is from a Kattis problem at https://open.kattis.com/problems/coloring
+Usage: java GraphColor < "testFileName".in
+*/
+
 import java.util.*;
 class GraphColor{
 	static int largestColor;
@@ -81,6 +86,4 @@ class Node{
 		}
 		System.out.println();
 	}
-
-
 }
