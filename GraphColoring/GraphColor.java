@@ -1,4 +1,4 @@
-// V00829624 Thomas, Jack
+//Thomas, Jack
 
 import java.util.*;
 class GraphColor{
@@ -19,54 +19,27 @@ class GraphColor{
 				vertices[i].neighbours.add(vertices[Integer.parseInt(line[j])]);
 			}
 		}
-		/*
-		for (int i = 0;i<vertices.length ;i++ ) {
-		vertices[i].printNeighbours();
-	}*/
-
 
 	for (int i = 2;i<vertices.length+1 ;i++ ) {
-		/*for (int j = 0;j<vertices.length ;j++ ) {
-			vertices[j].color = -1;
-		}*/
 		vertices[0].color = 0;
 		vertices[0].neighbours.element().color = 1;
 		Color(i,2,vertices);
-
-		//System.out.println(i+"----------------------------");
 	}
-
-	/*
-	for (int i=0;i<vertices.length ;i++ ) {
-		System.out.print(vertices[i].color+" ");
-	}
-	System.out.println();*/
-
 }
 public static void Color(int nColors, int node, Node [] vertices){
 
 	for (int i =0;i<nColors ;i++ ) {
-		//System.out.println("node: "+node);
 		vertices[node].color = i;
-		//System.out.println("i: "+i);
 		boolean check = Check(vertices[node]);
-		/*
-		for (int j=0;j<vertices.length ;j++ ) {
-			System.out.print(vertices[j].color+" ");
-		}
-		System.out.println();*/
+
 		if(check){
-			//System.out.println("this");
 			if(node < vertices.length-1 ){
 				Color(nColors,node+1,vertices);
 			}else{
 				System.out.println(nColors);
 				System.exit(0);
 			}
-
-
 		}
-
 	}
 	vertices[node].color = -1;
 
