@@ -1,6 +1,7 @@
 //Thomas, Jack
 
 /*
+Completed for Algorithms + Data Structures II
 This is from a Kattis problem at https://open.kattis.com/problems/coloring
 Usage: java GraphColor < "testFileName".in
 */
