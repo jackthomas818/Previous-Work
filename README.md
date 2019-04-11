@@ -1,2 +1,2 @@
-# Projects
-All projects will go in here
+# Previous work
+All previous work will go in here
